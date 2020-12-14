@@ -1,0 +1,73 @@
+path { 
+    stroke: grey;
+    stroke-width: 1.5;
+    fill: none;
+}
+
+path:hover { 
+    stroke:blue;
+    stroke-width: 2;
+}
+
+line {
+    fill: none;
+    stroke: #ffab00;
+    stroke-width: 2;
+}
+
+#versions {
+    background-color: grey;
+    width:10;
+    height:20;
+}
+
+
+.link {
+	fill: none;
+	stroke: #555;
+	stroke-opacity: 0.4;
+	stroke-width: 1.5px;
+}
+
+.chart { 
+    background: #fff;
+  }
+  
+.axis path, .axis line {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2px;
+    shape-rendering: crispEdges;
+  }
+  
+  button {
+    position: absolute;
+    right: 50px;
+    top: 10px;
+  }
+
+
+p {
+  font: 12px Verdana;
+}
+
+#sumburst {    
+	position:absolute;
+	top:10px;
+  left:10px;
+}
+
+#parallelCordinates {    
+	position:absolute;
+	top:410px;
+  left:720px;
+  background-color: rgb(128, 228, 223);
+}
+
+#themeRiver {    
+	position:absolute;
+	top:410px;
+  left:10px;
+  background-color: rgb(172, 218, 136);
+}
+
