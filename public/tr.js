@@ -36,7 +36,7 @@ function sentiment(s) {if (s == 1) {
 
 
 
-d3.csv("public/data/excomment_sentiments.csv").then(function(data) {
+d3.csv("data/excomment_sentiments.csv").then(function(data) {
 
         data.forEach(function(d) {
             d.date = format(d.date);

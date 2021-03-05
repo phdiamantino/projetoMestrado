@@ -102,7 +102,7 @@ const svgSB = d3.select("#sumburst").append("svg")
     svgSB.selectAll("path")
         .data(partition(root).descendants().filter(d => d.depth))
         .enter().append("path")
-        //.attr("display", d => d.depth ? null : "none") // area branca central
+        .attr("display", d => d.depth ? null : "none") // area branca central
         .attr("d", arc)
         .style("fill", d=> color((d.children ? d : d.parent).data.key))
         /*.attr("fill", d => {
@@ -121,11 +121,11 @@ const svgSB = d3.select("#sumburst").append("svg")
 
         function click(d) {
         svgSB.transition()
-            .duration(600)
+            .duration(300)
             .tween("scales", function() {
                 var xd = d3.interpolate(xSB.domain(), [d.x0, d.x1]),
                     yd = d3.interpolate(ySB.domain(), [d.y0, 1]);
-                    yr = d3.interpolate(ySB.range(), [d.y0 ? 20 : 0, radius]);
+                    yr = d3.interpolate(ySB.range(), [d.y0 ? 25 : 0, radius]);
                 return function(t) { xSB.domain(xd(t));
                                      ySB.domain(yd(t)).range(yr(t));
                                      return arc(d)};

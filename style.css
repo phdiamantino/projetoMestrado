@@ -53,8 +53,16 @@ p {
 
 #sumburst {    
 	position:absolute;
-	top:10px;
+	top: 1px;
   left:10px;
+  background-color: rgb(215, 182, 221);
+}
+
+#multidimencionalProjections {    
+	position:absolute;
+	top:1;
+  left:720px;
+  background-color: rgb(212, 221, 83);
 }
 
 #parallelCordinates {    
@@ -70,4 +78,6 @@ p {
   left:10px;
   background-color: rgb(172, 218, 136);
 }
+
+
 
